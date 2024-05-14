@@ -1,0 +1,40 @@
+<p>directive-demo works!</p>
+
+<input [(ngModel)]="num"
+placeholder="please enter some number"
+(input)="onInput()">
+<h3 [ngStyle]="{backgroundColor:getColor()}"
+[ngClass]="{even:num%2==0,odd:num%2==1}">{{message}}</h3>
+
+<input [(ngModel)]="num1"><input [(ngModel)]="num2">
+<button (click)="add()">Add</button>
+<h3>the addition of {{((num1*1)+num2)}}</h3>
+<hr>
+
+
+<h2 *ngFor="let val of values"
+[ngClass] = "{even: val%2 == 0}"
+[ngStyle]="{backgroundColor:showColor(val)}">{{ val }}</h2>
+
+Student Details
+<label>Select the Branch</label>
+<input [(ngModel)]="selectedBranch">
+<table border="2" *ngIf="students.length>0">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Percentage</th>
+    </tr>
+    <tr *ngFor="let st of students | filter : selectedBranch: 'stuBranch'">
+    <td>{{st.stuId}}</td>
+    <td>{{st.stuName}}</td>
+    <td>{{st.stuBranch}}</td>
+    <td>{{st.stuPerc}}</td>
+    </tr>
+</table>
+<div *ngFor="let letter of 'hello'">
+    <h5>{{letter}}</h5>
+</div>
+
+<p appHighlight >hello all, testing the custome directive, highlight</p>

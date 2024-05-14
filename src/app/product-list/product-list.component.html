@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Product List {{message}}</h3>
+        <input [(ngModel)]="filterString">
+        <h2>{{filterString}}</h2>
+    </div>
+    <div class="card-body">
+<table class="table"
+*ngIf="products && products.length>0;" else="noProducts">
+<thead [ngStyle]="{backgroundColor : 'black', color: 'white'}">
+    <th>#</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Rating</th>
+</thead>
+<tbody>
+    <tr *ngFor="let product of filteredProducts">
+        <th>{{ product.productId }}</th>
+        <th> <img [src]="product.imageUrl" [alt]="product.productName" [style.width]="60" [style.height]="90"></th>
+        <td><a [routerLink]="['/products',product.productId]">{{ product.productName }}</a></td>
+        <td>{{ product.productDesc }}</td>
+        <td>{{ product.productPrice }}</td>
+        <td><app-star [rating] = "product.rating" (ratingClick)="noRatingClick($event)"></app-star></td>
+    </tr>
+</tbody>
+</table>
+<ng-template #noProducts>
+    <h3> Product are not available</h3>
+</ng-template>
+<h3 *ngIf="products.length == 0">Product are not available</h3>
+    </div>
+</div>
+
+
+

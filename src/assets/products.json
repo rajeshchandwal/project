@@ -1,0 +1,74 @@
+[
+{
+    "productId" : 101,
+    "imageUrl" : "../assets/iphone.jfif",
+    "productName" : "IPHONE 11",
+    "productDesc" : "APPLE PHONE",
+    "productPrice" : 60000,
+    "rating" : 5
+  },
+  {
+    "productId" : 102,
+    "imageUrl" : "../assets/samsung.jfif",
+    "productName": "SAMSUNG PRO",
+    "productDesc" : "SAMSUNG PHONE",
+    "productPrice" : 25000,
+    "rating" : 3.5
+  },
+  {
+    "productId" : 103,
+    "imageUrl" : "../assets/redmi.jfif",
+    "productName": "REDMI PRIME",
+    "productDesc" : "REDMI PHONE",
+    "productPrice" : 15000,
+    "rating" : 2.6
+  },
+  {
+    "productId" : 104,
+    "imageUrl" : "../assets/oppo.jfif",
+    "productName": "OPPO PLUS",
+    "productDesc" : "OPPO PHONE",
+    "productPrice" : 28000,
+    "rating" : 3.4
+  },
+  {
+    "productId" : 105,
+    "imageUrl" : "../assets/vivo.jfif",
+    "productName": "VIVO PRIME",
+    "productDesc" : "VIVO PHONE",
+    "productPrice" : 15600,
+    "rating" : 3.6
+  },
+  {
+    "productId" : 106,
+    "imageUrl" : "../assets/realme.jfif",
+    "productName": "REALME PRIME",
+    "productDesc" : "REALME PHONE",
+    "productPrice" : 15900,
+    "rating" : 3.6
+  },
+  {
+    "productId" : 107,
+    "imageUrl" : "../assets/poco.jfif",
+    "productName": "POCO PRO",
+    "productDesc" : "POCO PHONE",
+    "productPrice" : 21500,
+    "rating" : 3.6
+  },
+  {
+    "productId" : 108,
+    "imageUrl" : "../assets/moto.jfif",
+    "productName": "MOTROLA",
+    "productDesc" : "MOTROLA PHONE",
+    "productPrice" : 22999,
+    "rating" : 3.6
+  },
+  {
+    "productId" : 109,
+    "imageUrl" : "../assets/googlepixel.jfif",
+    "productName": "GOOGLE PIXEL",
+    "productDesc" : "GOOGLE PHONE",
+    "productPrice" : 44900,
+    "rating" : 3.6
+  }
+]
